@@ -1,0 +1,92 @@
+opc=0
+descuento=0
+cotizacion=0
+cp=250000
+id=475000
+ob=800000
+opc=int(input("\n -1 Cotizacion \n -2 reniciar cotizacion \n -3 salir \nEscoga una opcion:"))
+while opc!=4:
+    try:
+        opc<=1>=3
+        break
+    except ValueError:
+        print ("La seleccion debe ser un numero")
+if opc==3:
+    print ("Adios")
+if opc==1:
+    while cotizacion!=4:
+        try:
+            cotizacion=int(input("1: carillas porcelanas \n 2: implantes dentales \n 3: ortodoncia dentales \ntodos los tratamientos incluyen Limpieza y destartraje, Aplicación de sellante,Aplicación de fluor    \nEscoge opcion: "))
+            cotizacion<=1>=3
+            print ("cotizacion debe ser de 1-3")
+            break
+        except ValueError:
+            print ("Cotizacion debe ser un numero")
+descuento=int(input("¿En que trabaja usted? \n -1:Auxiliar \n -2:Administrativo \n3-docente"))
+while descuento!=4:
+    try:
+        descuento>0
+        print ("Descuento debe ser de 1-3")
+        break
+    except ValueError:
+        print ("Descuento debe ser un numero")
+auxiliar= 0.15
+administrativo= 0.10
+docente= 0.05
+if cotizacion==1 and descuento==1:
+    valor11=cp*auxiliar
+    valor112=cp - valor11
+    print (f"el descuento es de:{valor11}"),
+    print (f"El total a pagar es de:{valor112/12} durante 12 meses")
+if cotizacion==1 and descuento==2:
+    valor12=cp*administrativo
+    valor122=cp - valor12
+    print (f"el descuento es de:{valor12}"),
+    print (f"El total a pagar es de:{valor122/12} durante 12 meses")
+if cotizacion==1 and descuento==3:
+    valor13=cp*docente
+    valor123=cp - valor13
+    print (f"el descuento es de:{valor13}"),
+    print (f"El total a pagar es de:{valor123/12} durante 12 meses")
+if cotizacion==2 and descuento==1:
+    valor21=id*auxiliar
+    valor212=id - valor21
+    print (f"el descuento es de:{valor21}"),
+    print (f"El total a pagar es de:{valor212/12} durante 12 meses")
+if cotizacion==2 and descuento==2:
+    valor23=id*administrativo
+    valor213=id - valor23
+    print (f"el descuento es de:{valor23}"),
+    print (f"El total a pagar es de:{valor213/12} durante 12 meses")
+if cotizacion==2 and descuento==3:
+    valor24=id*docente
+    valor214=id - valor24
+    print (f"el descuento es de:{valor24}"),
+    print (f"El total a pagar es de:{valor214/12} durante 12 meses")
+if cotizacion==3 and descuento==1:
+    valor31=ob*auxiliar
+    valor311=ob - valor31
+    print (f"el descuento es de:{valor31}"),
+    print (f"El total a pagar es de:{valor311/12} durante 12 meses")
+if cotizacion==3 and descuento==2:
+    valor32=ob*administrativo
+    valor312=ob - valor32
+    print (f"el descuento es de:{valor32}"),
+    print (f"El total a pagar es de:{valor312/12}")
+if cotizacion==3 and descuento==3:
+    valor34=ob*docente
+    valor314=ob - valor34
+    print (f"el descuento es de:{valor34}"),
+    print (f"El total a pagar es de:{valor314/12} durante 12 meses")
+
+
+            
+
+
+
+        
+
+
+
+    
+
