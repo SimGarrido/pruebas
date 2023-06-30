@@ -1,0 +1,15 @@
+import prueba as fn
+nombrejug=[]
+rut=[]
+fechanac=[]
+categoria=[]
+categorias=[]
+celular=[]
+correo=[]
+op=0
+while op !=3:
+    op=fn.menu
+    if op==1:
+        fn(nombrejug,rut,fechanac,categorias,celular,correo)
+    elif op==3:
+        fn.salir
